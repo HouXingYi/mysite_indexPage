@@ -18,7 +18,7 @@ module.exports = {
       port : '3999',
       ref  : 'origin/master',
       repo : 'git@houxingyi:houxingyi/mysite_indexPage.git',
-      path : '/www/indexPage',
+      path : 'www/indexPage',
       'ssh_options': "StrictHostKeyChecking=no",
       'post-deploy' : "npm install && pm2 startOrRestart ecosystem.json --env production",
       'env': {
