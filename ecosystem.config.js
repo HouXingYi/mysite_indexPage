@@ -20,7 +20,7 @@ module.exports = {
       repo : 'git@houxingyi:houxingyi/mysite_indexPage.git',
       path : '/www/indexPage',
       'ssh_options': "StrictHostKeyChecking=no",
-      'post-deploy' : "cnpm install express && pm2 startOrRestart ecosystem.json --env production",
+      'post-deploy' : "cnpm install express && pm2 startOrRestart ecosystem.config.js --env production",
       'env': {
           "NODE_NEV": "production"
       }
